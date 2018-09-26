@@ -5,16 +5,16 @@
    		{% csrf_token %}
    		<fieldset class="form-group">
    			<legend class="border-bottom mb-4">Join Today until you dont dead</legend>
-   		 { form }
+   		 {{ form.as_p }}
    		</fieldset>
 
    		<div class="form-group">
-   			<button class="btn bt-success" type="submit">Join</button>
+   			<button class="btn btn-success" type="submit">Join</button>
    		</div>
    	</form>
    	<div class="border-top pt-3">
-   		<small class="text-muted">Already Have Account
-    <a href="#" class="ml-2">Sign In</a>
+   		<small class="text-muted">Already Have Account? -
+    <a href="#" class="ml-2"> Sign In</a>
    		</small>
    	</div>
    </div>
